@@ -10,3 +10,11 @@ class Solution(object):
         :type list2: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
+
+        # create a starting node
+        # compare the vals at both list pointers 
+        # append the smaller value to the new list 
+        # advance that pointers list
+        # advance the new lists pointer 
+        # repeat until one of the lists is empty
+        # attach the remaining values to the new list
