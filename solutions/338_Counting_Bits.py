@@ -4,7 +4,10 @@ class Solution(object):
         :type n: int
         :rtype: List[int]
         """
-        # for every number up until n starting at 0
-            # at that index, count the number of on bits
-            # update the value at that index to the number of count bits
-        # return the array
+        bit_counts = [0] * (n + 1)
+
+        for number in range(1, n + 1):
+            previous_number = number >> 1
+            last_bit = number & 1
+            bit_counts[number] = bit_counts[previous_number] + last_bit
+        return bit_counts
